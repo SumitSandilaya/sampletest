@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "ce79c857-bb4a-4007-a01e-9e7dbd5cd9ed",
+		"name": "Best-Buy-Playground",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5992017"
+	},
+	"item": [
+		{
+			"name": "CreateProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"New Product\",\r\n\t\"type\": \"Hard money\",\r\n\t\"upc\": \"12345676\",\r\n\t\"price\": 99.99,\r\n\t\"description\": \"This is a placeholder request for creating a new product.\",\r\n\t\"model\": \"NP12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/products/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:8085/",
+			"type": "string"
+		}
+	]
+}
